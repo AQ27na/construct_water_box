@@ -2,14 +2,14 @@
 
 A python script using **Packmol** (installed by Julia) to generate a water box (1g/cm3) on Windows system.
 
-1. Install Julia (Julia.appinstaller)
-2. Install Packmol by Julia. (https://m3g.github.io/packmol/download.shtml).
+**1**. Install Julia (Julia.appinstaller)
+**2**. Install Packmol by Julia. (https://m3g.github.io/packmol/download.shtml).
 
    a. Open Julia
 
    b. Input: import Pkg; Pkg.add("Packmol")
 
-4. cmd: **python cal-water.py --x 30 --y 30 --z 30**
+**3**. cmd: **python cal-water.py --x 30 --y 30 --z 30**
  
    a. **30 Å * 30 Å * 30 Å** is the box's dimension, water count is based on this.
 
@@ -23,9 +23,7 @@ A python script using **Packmol** (installed by Julia) to generate a water box (
 
    e. --no-run, generate a packmol input file without using Packmol to generate the water box.
 
-
-
-6. water models
+**4**. water models
 
    tip3p.pdb is TIP3P model
 
@@ -34,4 +32,13 @@ A python script using **Packmol** (installed by Julia) to generate a water box (
    opc.pdb is four point OPC model
 
    opc3.pdb is three point OPC model.
-   
+
+6. example:
+
+   a. **python cal-water.py --x 30 --y 30 --z 30**
+
+      a water box (x:1-29, y:1-29, z:22.5-48.5), spce water model, 1 g/cm3.
+
+   a. **python cal-water.py --x 30 --y 30 --z 30 --water tip3p.pdb --d 0.8**
+
+      a water box (x:1-29, y:1-29, z:22.5-48.5), tip3p water model, 0.8 g/cm3.
