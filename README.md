@@ -17,7 +17,7 @@ A python script to using the Packmol (installed by Julia) to generate a water bo
 
    c. If the real box's dimension is needed to change, it is on the **python file line 49**
 
-       (  inside box 1.0 1.0 **22.5** {Lx-1.0:.6f} {Ly-1.0:.6f} **{Lz + 22.5 - 4.0:.6f**})
+       (  inside box 1.0 1.0 22.5 {Lx-1.0:.6f} {Ly-1.0:.6f} {Lz + 22.5 - 4.0:.6f})
 
    d. --water **spce** (default), --d **1.0** (defalut 1.0 g/cm3), these options have deafult settings and are not required to input.
 
