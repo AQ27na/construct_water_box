@@ -35,18 +35,18 @@ def compute_n(x, y, z, d=1.0):
     n = max(int(round(molecules)), 0)
     return n, (Lx, Ly, Lz)
 
-def write_packmol_input(n, box_dims, water_pdb, output_pdb, inp_path):
+def write_packmol_input(n, box_dims, water, output, inp_path):
     """
     Create a Packmol input file to place n water molecules inside the given box.
     """
     Lx, Ly, Lz = box_dims
     content = f"""tolerance 2.0
 filetype pdb
-output {output_pdb}
+output {output}
 
-structure {water_pdb}
+structure {water}
   number {n}
-  inside box 1.0 1.0 22.5 {Lx-1.0:.6f} {Ly-1.0:.6f} 53.5
+  inside box 1.0 1.0 22.5 {Lx-1.0:.6f} {Ly-1.0:.6f} {Lz + 22.5 - 4.0:.6f}
 end structure
 """
     Path(inp_path).write_text(content)
