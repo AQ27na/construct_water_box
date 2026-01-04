@@ -8,7 +8,7 @@ A python script to using the Packmol (installed by Julia) to generate a water bo
    a. Open Julia
    b. Input: import Pkg; Pkg.add("Packmol")
 
-3. cmd: python cal-water.py --x 30 --y 30 --z 30
+3. cmd: **python cal-water.py --x 30 --y 30 --z 30**
  
    30 Å * 30 Å * 30 Å is the box's dimension, water count is based on this.
 
