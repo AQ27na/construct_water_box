@@ -19,7 +19,7 @@ A python script to using the Packmol (installed by Julia) to generate a water bo
 
    d. If the real box's dimension is needed to change, it is on the **python file line 49**
 
-    (  inside box 1.0 1.0 22.5 {Lx-1.0:.6f} {Ly-1.0:.6f} 53.5)
+       (  inside box 1.0 1.0 22.5 {Lx-1.0:.6f} {Ly-1.0:.6f} 53.5)
 
 6. water models
 
