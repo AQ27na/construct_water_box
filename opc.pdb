@@ -1,0 +1,6 @@
+REMARK   OPC water molecule (4-point)
+HETATM    1  O   HOH A   1       0.000   0.000   0.000  1.00  0.00           O
+HETATM    2  H1  HOH A   1       0.872   0.000   0.000  1.00  0.00           H
+HETATM    3  H2  HOH A   1      -0.218   0.844   0.000  1.00  0.00           H
+HETATM    4  M   HOH A   1       0.000   0.159   0.000  1.00  0.00           X
+END
