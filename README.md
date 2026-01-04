@@ -20,9 +20,9 @@ A python script to using the Packmol (installed by Julia) to generate a water bo
 
    tip3p.pdb is TIP3P model
 
-   SPCE is SPC/E model
+   spec.pdb is SPC/E model
 
-   OPC is four point OPC model
+   opc.pdb is four point OPC model
 
-   OPC3 is three point OPC model.
+   opc3.pdb is three point OPC model.
    
