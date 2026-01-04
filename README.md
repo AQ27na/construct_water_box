@@ -17,9 +17,11 @@ A python script to using the Packmol (installed by Julia) to generate a water bo
 
    c. --water spce (default), --d 1.0 (defalut 1.0), these options have deafult settings and are not required to input.
 
-   d. If the real box's dimension is needed to change, it is on the **python file line 49** (  inside box 1.0 1.0 22.5 {Lx-1.0:.6f} {Ly-1.0:.6f} 53.5)
+   d. If the real box's dimension is needed to change, it is on the **python file line 49**
 
-5. water models
+    (  inside box 1.0 1.0 22.5 {Lx-1.0:.6f} {Ly-1.0:.6f} 53.5)
+
+6. water models
 
    tip3p.pdb is TIP3P model
 
