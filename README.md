@@ -14,5 +14,7 @@ A python script to using the Packmol (installed by Julia) to generate a water bo
 
    what we get is a box with a dimension of 28 Å * 28 Å * 26 Å, which is useful for merging the box with other structures.
 
-   If the real box's dimension is needed to change, it is on the **line 50** (  inside box 1.0 1.0 22.5 {Lx-1.0:.6f} {Ly-1.0:.6f} 53.5) 
+   If the real box's dimension is needed to change, it is on the **line 50** (  inside box 1.0 1.0 22.5 {Lx-1.0:.6f} {Ly-1.0:.6f} 53.5)
+
+4. Other 
    
