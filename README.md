@@ -15,7 +15,7 @@ A python script to using the Packmol (installed by Julia) to generate a water bo
 
    b. what we get is a box with a dimension of 28 Å * 28 Å * 26 Å, which is useful for merging the box with other structures.
 
-   c. --water spce (default), --d 1.0 (defalut 1.0), these options have deafult settings and are not required to input.
+   c. --water **spce** (default), --d **1.0** (defalut 1.0 g/cm3), these options have deafult settings and are not required to input.
 
    d. If the real box's dimension is needed to change, it is on the **python file line 49**
 
