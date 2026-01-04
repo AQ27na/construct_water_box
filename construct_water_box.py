@@ -98,13 +98,14 @@ def run_packmol(input_file="packmol_input.inp", packmol_exe="packmol"):
     """
     try:
         # Check if packmol is available
-        result = subprocess.run(
-            [packmol_exe],
-            stdin=open(input_file, 'r'),
-            stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE,
-            text=True
-        )
+        with open(input_file, 'r') as f:
+            result = subprocess.run(
+                [packmol_exe],
+                stdin=f,
+                stdout=subprocess.PIPE,
+                stderr=subprocess.PIPE,
+                text=True
+            )
         
         print("Packmol output:")
         print(result.stdout)
@@ -228,11 +229,11 @@ def main():
                     n_atoms = sum(1 for line in f if line.startswith('HETATM') or line.startswith('ATOM'))
                 print(f"Total atoms in water box: {n_atoms}")
         else:
-            print("\nPackmol input file generated. Run manually with:", file=sys.stderr)
+            print("\npackmol input file generated. Run manually with:", file=sys.stderr)
             print(f"  packmol < {args.input}", file=sys.stderr)
             sys.exit(1)
     else:
-        print("\nPackmol input file generated. Run with:")
+        print("\npackmol input file generated. Run with:")
         print(f"  packmol < {args.input}")
 
 
