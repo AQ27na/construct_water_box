@@ -1,2 +1,3 @@
 # construct_water_box
-Using packmol to construct water box
+A python script to using the Packmol (installed by Julia) to generate a water box (1g/cm3) on Windows system.
+Packmol is installed by Julia (https://m3g.github.io/packmol/download.shtml).
